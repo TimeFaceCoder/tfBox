@@ -78,6 +78,7 @@ public class DetailActivity extends BaseActivity {
 
         fillUserContent(mDirectorContainer, movieObj.getDirectors());
         fillUserContent(mActContainer, movieObj.getCasts());
+        
 
         StringBuilder tag = new StringBuilder();
         for (int i = 0; i < movieObj.getGenres().length; i++) {
