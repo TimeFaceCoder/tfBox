@@ -1,0 +1,204 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gvMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+        tools:context="cn.timeface.tfbox.activities.DetailActivity">
+
+
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivConer"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/ivConerReflection"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Medium Text"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white" />
+
+                    <TextClock
+                        android:id="@+id/textClock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="导演："
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/text_color1" />
+
+                    <LinearLayout
+                        android:id="@+id/directorContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView3"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="演员："
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/text_color1" />
+
+                    <LinearLayout
+                        android:id="@+id/actContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvOtherInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/detail_other_info"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text_color1" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="剧情介绍："
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvSummary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:ellipsize="end"
+                    android:lineSpacingMultiplier="1.4"
+                    android:maxLines="5"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text_color1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnPlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_detail_play"
+                        android:clickable="true"
+                        android:onClick="onPlay" />
+
+                    <Button
+                        android:id="@+id/btnCollect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:background="@drawable/selector_detail_collect"
+                        android:clickable="true"
+                        android:onClick="onCollect" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="剧照"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+        <cn.timeface.tfbox.views.NoScrollGridView
+            android:id="@+id/gvPhotos"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:numColumns="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

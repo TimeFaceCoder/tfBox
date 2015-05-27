@@ -1,0 +1,73 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context="cn.timeface.tfbox.fragments.SearchKeyFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/abc_action_bar_default_height_material">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="搜索"
+                android:id="@+id/tvBack" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvName" />
+
+        <cn.timeface.tfbox.views.NoScrollGridView
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="6"
+            android:id="@+id/gvKeys" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_search_back"
+                android:id="@+id/btnInputBack" />
+
+            <Button
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_search_clear"
+                android:id="@+id/btnInputClear"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="拼音首字母搜索例如：《奔跑吧兄弟》输入BPBXD"
+            android:gravity="center_horizontal"
+            android:id="@+id/tvTip" />
+    </LinearLayout>
+</ScrollView>

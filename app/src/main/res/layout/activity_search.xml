@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/bg"
+    tools:context="cn.timeface.tfbox.activities.SearchActivity">
+
+    <fragment
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:name="cn.timeface.tfbox.fragments.SearchKeyFragment"
+        android:id="@+id/fragment3"
+        android:layout_weight="3.5" />
+    <fragment
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:name="cn.timeface.tfbox.fragments.MainContentFragment"
+        android:id="@+id/fragment4"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="6.5" />
+</LinearLayout>

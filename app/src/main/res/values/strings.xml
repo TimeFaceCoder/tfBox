@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">时光之盒</string>
+    <string name="tag_index">传递下标</string>
+    <string name="tag_obj">传递对象</string>
+    <string name="tag_ex">传递扩展信息</string>
+
+    <string name="detail_other_info">标签：%1$s   年代：%2$s</string>
+</resources>

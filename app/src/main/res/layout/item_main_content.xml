@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.timeface.tfbox.views.ScaledImageView
+        xmlns:scale="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        scale:sHeight="3"
+        scale:sWidth="2" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/btn_textcolor" />
+</LinearLayout>

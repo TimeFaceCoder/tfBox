@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.timeface.tfbox.fragments.MainContentFragment">
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="爱情"
+            android:id="@+id/tvTitle"
+            android:layout_centerVertical="true"/>
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textClock"
+            android:layout_marginRight="16dp"
+            android:format24Hour="h:mm"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gvContent"
+        android:numColumns="5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rlTop"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

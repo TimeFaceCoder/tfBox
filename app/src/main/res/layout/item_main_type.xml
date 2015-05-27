@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:gravity="center"
+        android:id="@+id/tvName"
+        android:background="@drawable/selector_main_type"
+        android:textColor="@color/btn_textcolor"
+        android:layout_gravity="center_horizontal" />
+</FrameLayout>
